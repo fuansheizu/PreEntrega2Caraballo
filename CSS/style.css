@@ -1,0 +1,113 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border
+}
+
+body {
+    background-color: #F0EAD1;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.mainHeader {
+    background-color: #666A86;
+    border: solid #333333;
+}
+
+.separator {
+    color: #333333;
+    font-style: bold;
+}
+
+.secondHeader {
+    background-color: #333333;
+    border: solid #333333;
+}
+
+.ideoLogo {
+    width: 100px;
+}
+
+.featuredCategoriesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.containerMenu {
+    /* background-color: #666A86; */
+    background-color: red;
+    border: solid;
+    color: #E8DDB5;
+    border-color: #D4E2EC;
+    position: relative;
+    width: 300px;
+    top: 275px;
+    left: 80px;
+    z-index: 1;
+}
+
+.featuredItemsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.featuredItems {
+    background-color: grey;
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+}
+
+header li {
+    display: inline;
+    color: #E8DDB5;
+}
+
+a {
+    color: #E8DDB5;
+}
+
+.categories {
+    background-color: grey;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.homeAndLivingItems {
+    background-color: grey;
+    border: 1px solid black;
+    width: 24%;
+    height: 350px;
+}
+
+.header,
+h1,
+.containerMenu,
+.categories,
+.home,
+.homeAndLivingItems,
+button {
+    text-align: center;
+}
+
+div {
+    text-align: center
+}
+
+.ItemView {
+    background-color: grey;
+    border: 1px solid black;
+    width: 24%;
+    height: 350px;
+    display: inline-block;
+}
+
+.orderTracking {
+    text-align: center;
+}
