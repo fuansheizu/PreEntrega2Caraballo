@@ -1,11 +1,12 @@
 html {
     margin: 0;
     padding: 0;
-    box-sizing: border
+    box-sizing: border;
 }
 
 body {
-    background-color: #F0EAD1;
+    background-color: #f0ead1;
+    margin: 0px;
 }
 
 header {
@@ -14,8 +15,12 @@ header {
     z-index: 2;
 }
 
+main {
+    margin: 0 30px;
+}
+
 .mainHeader {
-    background-color: #666A86;
+    background-color: #666a86;
     border: solid #333333;
 }
 
@@ -29,47 +34,110 @@ header {
     border: solid #333333;
 }
 
+.header-flex {
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.singIn-logIn-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 280px;
+    margin-top: 5px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .ideoLogo {
     width: 100px;
 }
 
 .featuredCategoriesGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    width: auto;
+    gap: 15px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.featuredCategories {
+    width: 100%;
+}
+
+.imgContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+}
+
+.imgStyle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .containerMenu {
-    /* background-color: #666A86; */
-    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #666a86;
     border: solid;
-    color: #E8DDB5;
-    border-color: #D4E2EC;
-    position: relative;
-    width: 300px;
-    top: 275px;
-    left: 80px;
+    color: #e8ddb5;
+    border-color: #d4e2ec;
+    min-width: 200px;
+    padding: 2px;
     z-index: 1;
 }
 
 .featuredItemsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.itemsContent {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .featuredItems {
     background-color: grey;
     border: 1px solid black;
-    width: 350px;
-    height: 350px;
 }
 
 header li {
     display: inline;
-    color: #E8DDB5;
+    color: #e8ddb5;
 }
 
 a {
-    color: #E8DDB5;
+    color: #e8ddb5;
 }
 
 .categories {
@@ -97,7 +165,7 @@ button {
 }
 
 div {
-    text-align: center
+    text-align: center;
 }
 
 .ItemView {
@@ -110,4 +178,32 @@ div {
 
 .orderTracking {
     text-align: center;
+}
+
+.homeAndLivingGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.homeAndLivingContent {
+    display: flex;
+    gap: 15px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.homeAndLivingItems {
+    width: 100%;
+}
+
+button {
+    background-color: #666a86;
+    color: white;
+}
+
+a:visited {
+    color: #e8ddb5;
 }
